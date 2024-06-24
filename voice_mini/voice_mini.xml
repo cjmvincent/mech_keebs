@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout value="0">
+<keyitems>
+<item key_value="40" fnlayer="0" layoutkeyvalue="40" layoutkeydesc="Enter"/>
+<item key_value="185" fnlayer="0" layoutkeyvalue="185" layoutkeydesc="Vol+"/>
+<item key_value="186" fnlayer="0" layoutkeyvalue="186" layoutkeydesc="Vol-"/>
+<item key_value="41" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="58" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="59" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="60" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="61" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="62" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="63" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="64" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="65" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="66" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="67" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="68" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="69" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="181" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="104" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="53" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="30" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="31" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="32" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="33" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="34" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="35" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="36" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="37" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="38" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="39" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="45" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="46" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="43" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="21" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="23" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="28" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="24" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="12" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="18" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="19" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="47" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="48" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="57" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="7" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="9" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="10" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="11" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="13" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="14" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="15" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="51" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="52" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="49" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="161" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="29" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="27" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="6" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="25" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="5" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="17" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="16" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="54" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="55" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="56" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="165" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="40" fnlayer="0" layoutkeyvalue="230" layoutkeydesc="MO(1)"/>
+<item key_value="160" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="163" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="162" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="44" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="166" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="164" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="80" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="81" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="82" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="79" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="42" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="50" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="100" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="75" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="76" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="78" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="135" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="137" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="167" fnlayer="0" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="40" fnlayer="0" layoutkeyvalue="230" layoutkeydesc="MO(1)"/>
+<item key_value="20" fnlayer="0" layoutkeyvalue="116" layoutkeydesc="M0"/>
+<item key_value="4" fnlayer="0" layoutkeyvalue="117" layoutkeydesc="M1"/>
+<item key_value="26" fnlayer="0" layoutkeyvalue="256" layoutkeydesc="  "/>
+<item key_value="22" fnlayer="0" layoutkeyvalue="256" layoutkeydesc="  "/>
+<item key_value="8" fnlayer="0" layoutkeyvalue="256" layoutkeydesc="  "/>
+<item key_value="230" fnlayer="0" layoutkeyvalue="256" layoutkeydesc="  "/>
+<item key_value="20" fnlayer="1" layoutkeyvalue="240" layoutkeydesc="Mode"/>
+<item key_value="26" fnlayer="1" layoutkeyvalue="244" layoutkeydesc="BT1"/>
+<item key_value="8" fnlayer="1" layoutkeyvalue="245" layoutkeydesc="BT2"/>
+<item key_value="4" fnlayer="1" layoutkeyvalue="253" layoutkeydesc="Battery"/>
+<item key_value="22" fnlayer="1" layoutkeyvalue="146" layoutkeydesc="RGB Toggle"/>
+<item key_value="40" fnlayer="1" layoutkeyvalue="248" layoutkeydesc="Reset"/>
+<item key_value="41" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="58" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="59" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="60" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="61" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="62" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="63" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="64" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="65" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="66" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="67" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="68" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="69" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="181" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="104" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="53" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="30" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="31" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="32" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="33" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="34" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="35" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="36" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="37" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="38" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="39" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="45" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="46" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="43" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="21" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="23" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="28" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="24" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="12" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="18" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="19" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="47" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="48" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="57" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="7" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="9" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="10" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="11" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="13" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="14" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="15" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="51" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="52" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="49" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="161" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="29" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="27" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="6" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="25" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="5" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="17" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="16" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="54" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="55" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="56" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="165" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="40" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="160" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="163" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="162" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="44" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="166" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="230" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="164" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="80" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="81" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="82" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="79" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="42" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="50" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="100" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="75" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="76" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="78" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="135" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="137" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="167" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="40" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="185" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="186" fnlayer="1" layoutkeyvalue="3" layoutkeydesc=""/>
+<item key_value="20" fnlayer="2" layoutkeyvalue="234" layoutkeydesc="TG(0)"/>
+<item key_value="20" fnlayer="3" layoutkeyvalue="234" layoutkeydesc="TG(0)"/>
+<item key_value="4" fnlayer="3" layoutkeyvalue="19" layoutkeydesc="P"/>
+<item key_value="22" fnlayer="3" layoutkeyvalue="18" layoutkeydesc="O"/>
+<item key_value="230" fnlayer="3" layoutkeyvalue="17" layoutkeydesc="N"/>
+</keyitems>
+<macro macroid="1">
+<item desc="Ctrl" type="2" value="162"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Alt" type="2" value="164"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Delete" type="2" value="46"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Delete" type="3" value="46"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Ctrl" type="3" value="162"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Alt" type="3" value="164"/>
+<item desc="10" type="1" value="10"/>
+</macro>
+<macro macroid="2">
+<item desc="Windows" type="2" value="91"/>
+<item desc="10" type="1" value="10"/>
+<item desc="L" type="2" value="76"/>
+<item desc="10" type="1" value="10"/>
+<item desc="Windows" type="3" value="91"/>
+<item desc="10" type="1" value="10"/>
+<item desc="L" type="3" value="76"/>
+<item desc="10" type="1" value="10"/>
+</macro>
+<macro macroid="3"/>
+<macro macroid="4"/>
+<macro macroid="5"/>
+<macro macroid="6"/>
+<macro macroid="7"/>
+<macro macroid="8"/>
+<macro macroid="9"/>
+<macro macroid="10"/>
+<macro macroid="11"/>
+<macro macroid="12"/>
+<macro macroid="13"/>
+<macro macroid="14"/>
+<macro macroid="15"/>
+<macro macroid="16"/>
+</layout>
