@@ -1,5 +1,5 @@
 
-![keyboards preview](images/keyboard_preview.JPG)
+![keyboards preview](images/keyboard_preview.jpg)
 
 ## Mechanical Keyboards
 
