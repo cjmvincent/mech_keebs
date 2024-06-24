@@ -1,5 +1,5 @@
 
-![keyboards preview](https://github.com/cjmvincent/mech_keebs/keyboard_preview.JPG)
+![keyboards preview](keyboard_preview.JPG)
 
 ## Mechanical Keyboards
 
