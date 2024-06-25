@@ -1,4 +1,4 @@
-* Mechanical Keyboards
+# Mechanical Keyboards
 
 ![keyboards preview](images/keyboard_preview.jpg)
 
