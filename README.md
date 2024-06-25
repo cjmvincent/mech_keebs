@@ -1,7 +1,6 @@
+* Mechanical Keyboards
 
 ![keyboards preview](images/keyboard_preview.jpg)
-
-## Mechanical Keyboards
 
 Hey ya'll, this is just a little repo to stash all of my config files for various keyboards and macropads.
 
