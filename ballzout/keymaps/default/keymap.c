@@ -63,14 +63,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FN2] = LAYOUT(
         KC_TAB,         KC_WH_D,        KC_UP,         KC_WH_U,       _______,                         _______,       _______,           _______,           _______,         _______,
-        _______,        KC_LEFT,        KC_DOWN,       KC_RIGHT,      _______,                         _______,       _______,           _______,           _______,         _______,
+        KC_HOME,        KC_LEFT,        KC_DOWN,       KC_RIGHT,      KC_END,                          _______,       _______,           _______,           _______,         _______,
         _______,        KC_WH_L,        _______,       KC_WH_R,       _______,                         _______,       _______,           _______,           _______,         _______,
-        _______,        _______,        _______,       _______,       _______, SCRL_MO,    _______,    _______,       _______,           _______,           _______,         _______
+        KC_ESC,         _______,        _______,       _______,       _______, SCRL_MO,    _______,    _______,       _______,           _______,           _______,         _______
     ),
     [_FN3] = LAYOUT(
         KC_EXLM,        KC_AT,          KC_HASH,       KC_DLR,        KC_PERC,                         KC_CIRC,       KC_AMPR,           KC_ASTR,           KC_MINS,         KC_UNDS,
         KC_LPRN,        KC_LBRC,        KC_LCBR,       KC_LT,         KC_GRV,                          KC_TILD,       KC_GT,             KC_RCBR,           KC_RBRC,         KC_RPRN,
-        KC_SCLN,        KC_CLN,         KC_QUOT,       KC_DQUO,       _______,                         _______,       KC_SLASH,          KC_BSLS,           KC_PIPE,         _______,
+        KC_SCLN,        KC_CLN,         KC_QUOT,       KC_DQUO,       _______,                         KC_MINS,       KC_UNDS,           KC_BSLS,           KC_PIPE,         KC_SLASH,
         _______,        _______,        _______,       _______,       _______, _______,    _______,    _______,       _______,           _______,           _______,         _______
     ),
     [_FN4] = LAYOUT(
