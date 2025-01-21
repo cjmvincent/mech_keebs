@@ -1,4 +1,4 @@
 # Atreus62
 
-![keyboards preview](images/atreus62.jpg)
+![keyboards preview](/images/atreus62.jpg)
 
