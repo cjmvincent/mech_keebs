@@ -1,4 +1,4 @@
 # BallzOut
 
-![keyboards preview](images/comingsoon.png)
+![keyboards preview](/images/comingsoon.png)
 
