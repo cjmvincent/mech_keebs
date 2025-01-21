@@ -1,4 +1,5 @@
-# Udonv2
-
 ![keyboards preview](/images/comingsoon.png)
 
+# Udonv2
+
+Designed and manufactured by TheMadeNoodle, the Udon:13v2 is a programable macropad featuring a 4x3 key layout and rotary knob.
