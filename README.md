@@ -1,8 +1,6 @@
-# Mechanical Keyboards
-
 ![keyboards preview](images/keyboard_preview.jpg)
 
-Hey ya'll, this is just a little repo to stash all of my config files for various keyboards and macropads.
+# Mechanical Keyboards
 
+Hey ya'll! This is a small repository where I keep all my configuration files for various keyboards and macropads. I've had many keyboards in the past, but these are the main ones I use regularly after finally embracing the 40% keyboard community.
 
-![keymap preview](images/keymap_preview.png)
