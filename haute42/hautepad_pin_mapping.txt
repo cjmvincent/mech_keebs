@@ -1,0 +1,23 @@
+Button		Pin		Key
+(UP)		27		Up
+(LEFT)		5		Left
+(RIGHT)		4		Right
+(DOWN)		3		Down
+(B3)		10		X
+(B4)		11		Y
+(R1)		12		RB
+(L1)		13		LB
+(B1)		6		A
+(B2)		7		B
+(R2)		8		RT
+(L2)		9		LT
+(L3)		26		Bottom Left Macro
+(UP)		2		Bottom Middle Macro
+(R3)		19		Bottom Right Macro
+(L3)		18		Top Macro
+(Turbo)		14		Turbo
+(A2)		21		-
+(A1)		20		Home
+(S1)		16		Back
+(S2)		17		Start
+
