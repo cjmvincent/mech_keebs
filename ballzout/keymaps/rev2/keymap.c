@@ -22,21 +22,24 @@ enum combo_events {
   COMBO_ESC,
   COMBO_TAB,
   COMBO_CAPS,
+  COMBO_SPECIAL,
   COMBO_LENGTH
 };
 
 uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo_ent[] = {KC_O, KC_P, COMBO_END};
-//const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
-const uint16_t PROGMEM combo_tab[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {RALT_T(KC_K),   RCTL_T(KC_L), COMBO_END};
+const uint16_t PROGMEM combo_esc[] = {KC_W, KC_E, COMBO_END};
+const uint16_t PROGMEM combo_tab[] = {LCTL_T(KC_S),   LALT_T(KC_D), COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {LSFT_T(KC_A), RSFT_T(KC_SCLN), COMBO_END};
+const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
   [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
-  //[COMBO_ESC] = COMBO(combo_esc, KC_ESC),
+  [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
   [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
-  [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS)
+  [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
+  [COMBO_SPECIAL] = COMBO(combo_special, MO(4))
 };
 
 //layer_state_t layer_state_set_user(layer_state_t state) {
@@ -63,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,        _______,        _______,        _______,        _______,                          KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
         _______,        _______,        _______,        _______,        _______,                          KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
         _______,        _______,        _______,        _______,        _______,                          KC_PAST,        KC_1,           KC_2,           KC_3,           KC_PEQL,
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     _______,        KC_0,           KC_PDOT,        _______,        _______
+        _______,        _______,        _______,        _______,        _______, _______,    _______,     KC_ENT,         KC_0,           KC_PDOT,        _______,        _______
     ),
     [_FN2] = LAYOUT(
         KC_TAB,         _______,        _______,        _______,        _______,                          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
@@ -149,4 +152,3 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     //}
 
 //}
-
