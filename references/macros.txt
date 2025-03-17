@@ -1,7 +1,11 @@
 enum custom_keycodes {
     yabai_left = SAFE_RANGE,
     yabai_right,
+    yabai_up,
+    yabai_down,
     uname,
+    lock,
+    
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

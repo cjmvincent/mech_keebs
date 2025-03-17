@@ -18,21 +18,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 enum combo_events {
-  COMBO_DEL,
+  COMBO_ENT,
   COMBO_ESC,
-  //COMBO_RCLICK,
+  COMBO_TAB,
+  COMBO_CAPS,
   COMBO_LENGTH
 };
+
 uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo_del[] = {KC_Y, KC_H, COMBO_END};
-const uint16_t PROGMEM combo_esc[] = {KC_T, KC_G, COMBO_END};
-//const uint16_t PROGMEM combo_rclick[] = {KC_MS_BTN1, SCRL_MO, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {KC_O, KC_P, COMBO_END};
+//const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_tab[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_caps[] = {LSFT_T(KC_A), RSFT_T(KC_SCLN), COMBO_END};
 
 combo_t key_combos[] = {
-  [COMBO_DEL] = COMBO(combo_del, KC_DEL),
-  [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
-  //[COMBO_RCLICK] = COMBO(combo_rclick, KC_MS_BTN2),
+  [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
+  //[COMBO_ESC] = COMBO(combo_esc, KC_ESC),
+  [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
+  [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS)
 };
 
 //layer_state_t layer_state_set_user(layer_state_t state) {
@@ -51,15 +55,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     
     [_BASE] = LAYOUT(
         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                             KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,
-        LSFT_T(KC_A),   LCTL_T(KC_S),   LALT_T(KC_D),   LGUI_T(KC_F),   HYPR_T(KC_G),                     HYPR_T(KC_H),   LGUI_T(KC_J),   LALT_T(KC_K),   LCTL_T(KC_L),   LSFT_T(KC_SCLN),
+        LSFT_T(KC_A),   LCTL_T(KC_S),   LALT_T(KC_D),   LGUI_T(KC_F),   HYPR_T(KC_G),                     HYPR_T(KC_H),   RGUI_T(KC_J),   RALT_T(KC_K),   RCTL_T(KC_L),   RSFT_T(KC_SCLN),
         KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                             KC_N,           KC_M,           KC_COMM,        KC_DOT,         KC_SLSH,
-        _______,        _______,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, KC_MS_BTN1, KC_MS_BTN2,  LT(3,KC_SPC),   LT(4,KC_ENT),   _______,        _______,        _______
+        _______,        _______,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, KC_MS_BTN1, KC_MS_BTN2,  LT(3,KC_SPC),   LT(4,KC_ESC),   _______,        _______,        _______
     ),
     [_FN1] = LAYOUT(
         _______,        _______,        _______,        _______,        _______,                          KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
         _______,        _______,        _______,        _______,        _______,                          KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
         _______,        _______,        _______,        _______,        _______,                          KC_PAST,        KC_1,           KC_2,           KC_3,           KC_PEQL,
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     KC_0,           KC_PDOT,        _______,        _______,        _______
+        _______,        _______,        _______,        _______,        _______, _______,    _______,     _______,        KC_0,           KC_PDOT,        _______,        _______
     ),
     [_FN2] = LAYOUT(
         KC_TAB,         _______,        _______,        _______,        _______,                          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
