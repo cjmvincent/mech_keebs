@@ -1,4 +1,4 @@
-![keyboards preview](/images/newtype36.JPG)
+![keyboards preview](/images/newtype36.jpg)
 
 # Baymax mk. II
 
