@@ -88,6 +88,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+#if defined(POINTING_DEVICE_ENABLE)
+void pointing_device_init_user(void) {
+    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+}
+#endif
+
 //bool encoder_update_user(uint8_t index, bool clockwise) {
     //if (index == 0) {
         //if (clockwise) {
