@@ -63,16 +63,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         KC_LGUI,        LT(2,KC_DEL),   LT(1,KC_BSPC),  LT(3,KC_SPC),   _______,        KC_LALT
     ),
     [_FN1] = LAYOUT(
-        _______,        _______,        _______,        _______,        _______,        KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
-        _______,        _______,        _______,        _______,        _______,        KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
+        _______,        _______,        KC_UP,          _______,        _______,        KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
+        _______,        KC_LEFT,        KC_DOWN,        KC_RGHT,        _______,        KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
         _______,        _______,        _______,        _______,        _______,        KC_PAST,        KC_1,           KC_2,           KC_3,           KC_PEQL,
-                                        _______,        _______,        _______,        KC_0,           KC_PDOT,        _______
+                                        _______,        _______,        _______,        KC_NO,          KC_0,           KC_PDOT
     ),
     [_FN2] = LAYOUT(
-        _______,        _______,        _______,        _______,        _______,        KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
-        _______,        _______,        _______,        _______,        _______,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
-        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,
-                                        _______,        _______,        _______,        _______,        _______,        _______
+        _______,        _______,        KC_END,         KC_HOME,        _______,        KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
+        _______,        _______,        KC_MS_WH_DOWN,  KC_MS_WH_UP,    _______,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
+        _______,        _______,        KC_MS_WH_LEFT,  KC_MS_WH_RIGHT, _______,        _______,        _______,        _______,        _______,        _______,
+                                        KC_MS_BTN2,     KC_MS_BTN1,     _______,        _______,        _______,        _______
     ),
     [_FN3] = LAYOUT(
         KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,        KC_CIRC,        KC_AMPR,        KC_ASTR,        _______,        _______,
@@ -88,14 +88,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     )
 };
 
+#if defined(POINTING_DEVICE_ENABLE)
+void pointing_device_init_user(void) {
+    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+}
+#endif
+
 //bool encoder_update_user(uint8_t index, bool clockwise) {
     //if (index == 0) {
         //if (clockwise) {
             //tap_code(KC_VOLD);
-            //tap_code(KC_MS_WH_UP);
+            //tap_code(KC_KC_MS_WH_UP);
         //} else {
             //tap_code(KC_VOLU);
-            //tap_code(KC_MS_WH_DOWN);
+            //tap_code(KC_KC_MS_WH_DOWN);
         //}
     //}
     //return true;
@@ -103,8 +109,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 //#if defined(ENCODER_MAP_ENABLE)
 //const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    //[0] =  { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)  },
-    //[1] =  { ENCODER_CCW_CW(KC_MS_WH_LEFT, KC_MS_WH_RIGHT)  },
+    //[0] =  { ENCODER_CCW_CW(KC_KC_MS_WH_UP, KC_KC_MS_WH_DOWN)  },
+    //[1] =  { ENCODER_CCW_CW(KC_KC_MS_WH_LEFT, KC_KC_MS_WH_RIGHT)  },
     //[2] =  { ENCODER_CCW_CW(KC_PGUP, KC_PGDN)  },
     //[3] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  } 
     //[4] =  { ENCODER_CCW_CW(XXXXXXX, XXXXXXX) }
