@@ -96,6 +96,7 @@
 
 #    define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #    define AUTO_MOUSE_DEFAULT_LAYER 2
+#    define AUTO_MOUSE_TIME 650
 
 #    define PMW33xx_CPI 800
 
