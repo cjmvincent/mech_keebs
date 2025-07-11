@@ -18,8 +18,8 @@
 
 /* tapping term */
 // #define TAPPING_FORCE_HOLD
-#define TAPPING_TERM 300
-// #define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TERM 230
+#define QUICK_TAP_TERM 0
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.
