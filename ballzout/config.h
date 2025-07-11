@@ -26,7 +26,7 @@
 
 #ifdef COMBO_ENABLE
 #    define COMBO_COUNT 2
-#    define COMBO_TERM 200
+#    define COMBO_TERM 75
 #endif
 
 /* Encoder */
@@ -104,7 +104,8 @@
 
 #    define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #    define AUTO_MOUSE_DEFAULT_LAYER 2
-#    define AUTO_MOUSE_TIME 650
+#    define AUTO_MOUSE_TIME 200
+#    define AUTO_MOUSE_DEBOUNCE 15
 
 #    define PMW33xx_CPI 800
 

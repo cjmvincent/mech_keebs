@@ -25,8 +25,8 @@
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.
 
 #ifdef COMBO_ENABLE
-#    define COMBO_COUNT 2
-#    define COMBO_TERM 200
+#    define COMBO_COUNT 5
+#    define COMBO_TERM 75
 #endif
 
 /* Encoder */
@@ -94,6 +94,8 @@
 
 #    define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #    define AUTO_MOUSE_DEFAULT_LAYER 2
+#    define AUTO_MOUSE_TIME 200
+#    define AUTO_MOUSE_DEBOUNCE 15
 
 #    define PMW33xx_CPI 800
 
