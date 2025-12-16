@@ -1,5 +1,5 @@
 # MCU name
-#MCU = RP2040
+# MCU = RP2040
 
 # Bootloader selection
 #BOOTLOADER = rp2040
@@ -9,7 +9,7 @@
 #
 #ENCODER_ENABLE = yes
 #BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
-#MOUSEKEY_ENABLE = yes       # Mouse keys
+MOUSEKEY_ENABLE = yes       # Mouse keys
 #EXTRAKEY_ENABLE = yes       # Audio control and System control
 #CONSOLE_ENABLE = no         # Console for debug
 #COMMAND_ENABLE = no         # Commands for debug and configuration

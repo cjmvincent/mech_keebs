@@ -94,8 +94,9 @@
 
 #    define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #    define AUTO_MOUSE_DEFAULT_LAYER 2
-#    define AUTO_MOUSE_TIME 200
-#    define AUTO_MOUSE_DEBOUNCE 15
+#    define AUTO_MOUSE_TIME 400 // default is 650 ms
+#    define AUTO_MOUSE_DEBOUNCE 25 // default is 25 ms
+#    define AUTO_MOUSE_THRESHOLD 10 //default is 10 units
 
 #    define PMW33xx_CPI 800
 

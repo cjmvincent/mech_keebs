@@ -28,16 +28,18 @@ enum combo_events {
 
 uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo_ent[] = {RALT_T(KC_K),   RCTL_T(KC_L), COMBO_END};
 const uint16_t PROGMEM combo_esc[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_tab[] = {LCTL_T(KC_S),   LALT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM combo_caps[] = {LSFT_T(KC_A), RSFT_T(KC_SCLN), COMBO_END};
+const uint16_t PROGMEM combo_tab[] = {KC_X,   KC_C, COMBO_END};
+const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {KC_COMMA,   KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
-  [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
   [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
   [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
+  [COMBO_BKSP] = COMBO(combo_bksp, KC_BSPC),
+  [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
   [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
   [COMBO_SPECIAL] = COMBO(combo_special, MO(4))
 };

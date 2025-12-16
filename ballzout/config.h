@@ -26,7 +26,8 @@
 
 #ifdef COMBO_ENABLE
 #    define COMBO_COUNT 2
-#    define COMBO_TERM 75
+#    define COMBO_TERM 50
+#    define COMBO_STRICT_TIMER
 #endif
 
 /* Encoder */
