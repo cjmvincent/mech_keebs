@@ -25,6 +25,7 @@
 #define SPECULATIVE_HOLD
 // #define QUICK_TAP_TERM 0
 
+#define LAYER_LOCK_IDLE_TIMEOUT 30000  // Turn off after 30 seconds.
 
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 200U // Timeout window in ms in which the double tap can occur.

@@ -18,20 +18,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 enum combo_events {
-    COMBO_ENT,
-    COMBO_ESC,
-    COMBO_TAB,
-    COMBO_CAPS,
-    COMBO_SPECIAL,
-    COMBO_LENGTH
+  COMBO_ESC,
+  COMBO_TAB,
+  COMBO_BKSP,
+  COMBO_ENT,
+  COMBO_CAPS,
+  COMBO_SPECIAL,
+  COMBO_LENGTH
 };
 
 uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo_ent[] = {RALT_T(KC_K),   RCTL_T(KC_L), COMBO_END};
-const uint16_t PROGMEM combo_esc[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_tab[] = {LCTL_T(KC_S),   LALT_T(KC_D), COMBO_END};
-const uint16_t PROGMEM combo_caps[] = {LSFT_T(KC_A), RSFT_T(KC_SCLN), COMBO_END};
+const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
+const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {KC_COMMA,   KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
@@ -60,19 +62,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,
         LSFT_T(KC_A),   LCTL_T(KC_S),   LALT_T(KC_D),   LGUI_T(KC_F),   HYPR_T(KC_G),   HYPR_T(KC_H),   RGUI_T(KC_J),   RALT_T(KC_K),   RCTL_T(KC_L),   RSFT_T(KC_SCLN),
         KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_N,           KC_M,           KC_COMM,        KC_DOT,         KC_SLSH,
-                                        _______,        LT(2,KC_DEL),   LT(1,KC_BSPC),  LT(3,KC_SPC),   _______,        _______
+                                        QK_LLCK,        LT(2,KC_DEL),   LT(1,KC_BSPC),  LT(3,KC_SPC),   _______,        QK_LLCK
     ),
     [_FN1] = LAYOUT(
         _______,        _______,        KC_UP,          _______,        _______,        KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
         _______,        KC_LEFT,        KC_DOWN,        KC_RGHT,        _______,        KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
         _______,        _______,        _______,        _______,        _______,        KC_PAST,        KC_1,           KC_2,           KC_3,           KC_PEQL,
-                                        _______,        _______,        _______,        KC_NO,          KC_0,           KC_PDOT
+                                        KC_TRNS,        _______,        _______,        KC_NO,          KC_0,           KC_TRNS
     ),
     [_FN2] = LAYOUT(
         _______,        _______,        KC_END,         KC_HOME,        _______,        KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
         _______,        _______,        KC_MS_BTN2,     KC_MS_BTN1,     _______,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
         _______,        _______,        KC_MS_WH_LEFT,  KC_MS_WH_RIGHT, _______,        _______,        _______,        _______,        _______,        _______,
-                                        _______,        _______,        _______,        _______,        _______,        _______
+                                        KC_TRNS,        _______,        _______,        _______,        _______,        KC_TRNS
     ),
     [_FN3] = LAYOUT(
         KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,        KC_CIRC,        KC_AMPR,        KC_ASTR,        _______,        _______,

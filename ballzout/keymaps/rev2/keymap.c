@@ -18,9 +18,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 
 enum combo_events {
-  COMBO_ENT,
   COMBO_ESC,
   COMBO_TAB,
+  COMBO_BKSP,
+  COMBO_ENT,
   COMBO_CAPS,
   COMBO_SPECIAL,
   COMBO_LENGTH
@@ -28,8 +29,8 @@ enum combo_events {
 
 uint16_t COMBO_LEN = COMBO_LENGTH;
 
-const uint16_t PROGMEM combo_esc[] = {KC_W, KC_E, COMBO_END};
-const uint16_t PROGMEM combo_tab[] = {KC_X,   KC_C, COMBO_END};
+const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
+const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
 const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_ent[] = {KC_COMMA,   KC_DOT, COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
