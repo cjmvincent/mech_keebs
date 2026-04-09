@@ -21,6 +21,7 @@ enum combo_events {
   COMBO_ESC,
   COMBO_TAB,
   COMBO_BKSP,
+  COMBO_DEL,
   COMBO_ENT,
   COMBO_CAPS,
   COMBO_SPECIAL,
@@ -32,14 +33,17 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
 const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM combo_ent[] = {KC_COMMA,   KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_del[] = {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {KC_K,   KC_L, COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
-    [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
     [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
     [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
+    [COMBO_BKSP] = COMBO(combo_bksp, KC_BKSP),
+    [COMBO_DEL] = COMBO(combo_del, KC_DEL),
+    [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
     [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
     [COMBO_SPECIAL] = COMBO(combo_special, MO(4))
 };
@@ -80,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,        KC_CIRC,        KC_AMPR,        KC_ASTR,        _______,        _______,
         KC_LPRN,        KC_LBRC,        KC_LCBR,        LSFT(KC_COMM),  KC_GRV,         KC_TILD,        LSFT(KC_DOT),   KC_RCBR,        KC_RBRC,        KC_RPRN,
         KC_SCLN,        KC_COLN,        KC_QUOT,        KC_DQUO,        _______,        KC_MINS,        KC_UNDS,        KC_BSLS,        KC_PIPE,        KC_SLSH,
-                                        _______,        _______,        _______,        _______,        _______,        _______
+                                        KC_TRNS,        _______,        _______,        _______,        _______,        KC_TRNS
     ),
     [_FN4] = LAYOUT(
         RGB_TOG,        _______,        _______,        _______,        _______,        _______,        KC_F1,          KC_F2,          KC_F3,          KC_F4,
