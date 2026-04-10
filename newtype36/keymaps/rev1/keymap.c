@@ -20,7 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 enum combo_events {
   COMBO_ESC,
   COMBO_TAB,
-  COMBO_BKSP,
+  COMBO_BSPC,
   COMBO_DEL,
   COMBO_ENT,
   COMBO_CAPS,
@@ -32,7 +32,7 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 
 const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
-const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo_bspc[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_del[] = {KC_O, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_ent[] = {KC_K,   KC_L, COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
@@ -41,7 +41,7 @@ const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END
 combo_t key_combos[] = {
     [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
     [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
-    [COMBO_BKSP] = COMBO(combo_bksp, KC_BKSP),
+    [COMBO_BSPC] = COMBO(combo_bspc, KC_BSPC),
     [COMBO_DEL] = COMBO(combo_del, KC_DEL),
     [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
     [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
@@ -76,8 +76,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FN2] = LAYOUT(
         _______,        _______,        KC_END,         KC_HOME,        _______,        KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
-        _______,        _______,        KC_MS_BTN2,     KC_MS_BTN1,     _______,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
-        _______,        _______,        KC_MS_WH_LEFT,  KC_MS_WH_RIGHT, _______,        _______,        _______,        _______,        _______,        _______,
+        _______,        _______,        MS_BTN2,        MS_BTN1,        _______,        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
+        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,        _______,
                                         KC_TRNS,        _______,        _______,        _______,        _______,        KC_TRNS
     ),
     [_FN3] = LAYOUT(
@@ -87,9 +87,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         KC_TRNS,        _______,        _______,        _______,        _______,        KC_TRNS
     ),
     [_FN4] = LAYOUT(
-        RGB_TOG,        _______,        _______,        _______,        _______,        _______,        KC_F1,          KC_F2,          KC_F3,          KC_F4,
-        RGB_VAI,        RGB_SAI,        RGB_HUI,        RGB_SPI,        RGB_MOD,        _______,        KC_F5,          KC_F6,          KC_F7,          KC_F8,
-        RGB_VAD,        RGB_SAD,        RGB_HUD,        RGB_SPD,        RGB_RMOD,       _______,        KC_F9,          KC_F10,         KC_F11,         KC_F12,
+        _______,        _______,        _______,        _______,        _______,        _______,        KC_F1,          KC_F2,          KC_F3,          KC_F4,
+        _______,        _______,        _______,        _______,        _______,        _______,        KC_F5,          KC_F6,          KC_F7,          KC_F8,
+        _______,        _______,        _______,        _______,        _______,        _______,        KC_F9,          KC_F10,         KC_F11,         KC_F12,
                                         _______,        _______,        _______,        _______,        _______,        _______
     )
 };
