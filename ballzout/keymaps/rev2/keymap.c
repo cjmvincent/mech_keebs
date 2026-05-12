@@ -20,7 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 enum combo_events {
   COMBO_ESC,
   COMBO_TAB,
-  COMBO_BKSP,
+  COMBO_BSPC,
+  COMBO_DEL,
   COMBO_ENT,
   COMBO_CAPS,
   COMBO_SPECIAL,
@@ -31,18 +32,20 @@ uint16_t COMBO_LEN = COMBO_LENGTH;
 
 const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
-const uint16_t PROGMEM combo_bksp[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM combo_ent[] = {KC_COMMA,   KC_DOT, COMBO_END};
+const uint16_t PROGMEM combo_bspc[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM combo_del[] = {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {KC_K,   KC_L, COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
 combo_t key_combos[] = {
-  [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
-  [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
-  [COMBO_BKSP] = COMBO(combo_bksp, KC_BSPC),
-  [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
-  [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
-  [COMBO_SPECIAL] = COMBO(combo_special, MO(4))
+    [COMBO_ESC] = COMBO(combo_esc, KC_ESC),
+    [COMBO_TAB] = COMBO(combo_tab, KC_TAB),
+    [COMBO_BSPC] = COMBO(combo_bspc, KC_BSPC),
+    [COMBO_DEL] = COMBO(combo_del, KC_DEL),
+    [COMBO_ENT] = COMBO(combo_ent, KC_ENT),
+    [COMBO_CAPS] = COMBO(combo_caps, KC_CAPS),
+    [COMBO_SPECIAL] = COMBO(combo_special, MO(4))
 };
 
 //layer_state_t layer_state_set_user(layer_state_t state) {
@@ -63,31 +66,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                             KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,
         LSFT_T(KC_A),   LCTL_T(KC_S),   LALT_T(KC_D),   LGUI_T(KC_F),   HYPR_T(KC_G),                     HYPR_T(KC_H),   RGUI_T(KC_J),   RALT_T(KC_K),   RCTL_T(KC_L),   RSFT_T(KC_SCLN),
         KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                             KC_N,           KC_M,           KC_COMM,        KC_DOT,         KC_SLSH,
-        _______,        _______,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, KC_MS_BTN1, KC_MS_BTN2,  LT(3,KC_SPC),   _______,        _______,        _______,        _______
+        _______,        QK_LLCK,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, KC_MS_BTN1, KC_MS_BTN2,  LT(3,KC_SPC),   _______,        QK_LLCK,        _______,        _______
     ),
     [_FN1] = LAYOUT(
         _______,        _______,        KC_UP,          _______,        _______,                          KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
         _______,        KC_LEFT,        KC_DOWN,        KC_RGHT,        _______,                          KC_PSLS,        KC_4,           KC_5,           KC_6,           KC_PPLS,
         _______,        _______,        _______,        _______,        _______,                          KC_PAST,        KC_1,           KC_2,           KC_3,           KC_PDOT,
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     KC_PEQL,        KC_0,           _______,        _______,        _______
+        _______,        KC_TRNS,        _______,        _______,        _______, _______,    _______,     KC_PEQL,        KC_0,           KC_TRNS,        _______,        _______
     ),
     [_FN2] = LAYOUT(
         _______,        _______,        _______,        _______,        _______,                          KC_HOME,        KC_PGDN,        KC_PGUP,        KC_END,         _______,
         _______,        _______,        KC_MS_BTN2,     KC_MS_BTN1,     _______,                          KC_LEFT,        KC_DOWN,        KC_UP,          KC_RGHT,        _______,
         _______,        _______,        _______,        _______,        _______,                          _______,        _______,        _______,        _______,        _______,
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     _______,        _______,        _______,        _______,        _______
+        _______,        KC_TRNS,        _______,        _______,        _______, _______,    _______,     _______,        _______,        KC_TRNS,        _______,        _______
     ),
     [_FN3] = LAYOUT(
         KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                          KC_CIRC,        KC_AMPR,        KC_ASTR,        _______,        _______,
         KC_LPRN,        KC_LBRC,        KC_LCBR,        LSFT(KC_COMM),  KC_GRV,                           KC_TILD,        LSFT(KC_DOT),   KC_RCBR,        KC_RBRC,        KC_RPRN,
         KC_SCLN,        KC_COLN,        KC_QUOT,        KC_DQUO,        _______,                          KC_MINS,        KC_UNDS,        KC_BSLS,        KC_PIPE,        KC_SLSH,        
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     _______,        _______,        _______,        _______,        _______
+        _______,        KC_TRNS,        _______,        _______,        _______, _______,    _______,     _______,        _______,        KC_TRNS,        _______,        _______
     ),
     [_FN4] = LAYOUT(
         RGB_TOG,        _______,        _______,        _______,        _______,                          _______,        KC_F1,          KC_F2,          KC_F3,          KC_F4,
         RGB_VAI,        RGB_SAI,        RGB_HUI,        RGB_SPI,        RGB_MOD,                          _______,        KC_F5,          KC_F6,          KC_F7,          KC_F8,
         RGB_VAD,        RGB_SAD,        RGB_HUD,        RGB_SPD,        RGB_RMOD,                         _______,        KC_F9,          KC_F10,         KC_F11,         KC_F12,
-        _______,        _______,        _______,        _______,        _______, _______,    _______,     _______,        _______,        _______,        _______,        _______
+        _______,        KC_TRNS,        _______,        _______,        _______, _______,    _______,     _______,        _______,        KC_TRNS,        _______,        _______
     )
 };
 
