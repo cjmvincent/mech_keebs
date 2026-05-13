@@ -104,10 +104,10 @@ void pointing_device_init_user(void) {
     //if (index == 0) {
         //if (clockwise) {
             //tap_code(KC_VOLD);
-            //tap_code(KC_KC_MS_WH_UP);
+            //tap_code(MS_WHLU);
         //} else {
             //tap_code(KC_VOLU);
-            //tap_code(KC_KC_MS_WH_DOWN);
+            //tap_code(MS_WHLD);
         //}
     //}
     //return true;
@@ -115,8 +115,8 @@ void pointing_device_init_user(void) {
 
 //#if defined(ENCODER_MAP_ENABLE)
 //const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    //[0] =  { ENCODER_CCW_CW(KC_KC_MS_WH_UP, KC_KC_MS_WH_DOWN)  },
-    //[1] =  { ENCODER_CCW_CW(KC_KC_MS_WH_LEFT, KC_KC_MS_WH_RIGHT)  },
+    //[0] =  { ENCODER_CCW_CW(MS_WHLU, MS_WHLD)  },
+    //[1] =  { ENCODER_CCW_CW(MS_WHLL, MS_WHLR)  },
     //[2] =  { ENCODER_CCW_CW(KC_PGUP, KC_PGDN)  },
     //[3] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  } 
     //[4] =  { ENCODER_CCW_CW(XXXXXXX, XXXXXXX) }

@@ -66,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,                             KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,
         LSFT_T(KC_A),   LCTL_T(KC_S),   LALT_T(KC_D),   LGUI_T(KC_F),   HYPR_T(KC_G),                     HYPR_T(KC_H),   RGUI_T(KC_J),   RALT_T(KC_K),   RCTL_T(KC_L),   RSFT_T(KC_SCLN),
         KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                             KC_N,           KC_M,           KC_COMM,        KC_DOT,         KC_SLSH,
-        _______,        QK_LLCK,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, KC_MS_BTN1, KC_MS_BTN2,  LT(3,KC_SPC),   _______,        QK_LLCK,        _______,        _______
+        _______,        QK_LLCK,        LT(2,KC_DEL),   LT(1,KC_BSPC),  KC_MUTE, MS_BTN1,    MS_BTN2,     LT(3,KC_SPC),   _______,        QK_LLCK,        _______,        _______
     ),
     [_FN1] = LAYOUT(
         _______,        _______,        KC_UP,          _______,        _______,                          KC_NUM,         KC_7,           KC_8,           KC_9,           KC_PMNS,
@@ -104,10 +104,10 @@ void pointing_device_init_user(void) {
     //if (index == 0) {
         //if (clockwise) {
             //tap_code(KC_VOLD);
-            //tap_code(KC_MS_WH_UP);
+            //tap_code(MS_WHLU);
         //} else {
             //tap_code(KC_VOLU);
-            //tap_code(KC_MS_WH_DOWN);
+            //tap_code(MS_WHLD);
         //}
     //}
     //return true;
@@ -115,8 +115,8 @@ void pointing_device_init_user(void) {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] =  { ENCODER_CCW_CW(KC_MS_WH_UP, KC_MS_WH_DOWN)  },
-    [1] =  { ENCODER_CCW_CW(KC_MS_WH_LEFT, KC_MS_WH_RIGHT) },
+    [0] =  { ENCODER_CCW_CW(MS_WHLU, MS_WHLD)  },
+    [1] =  { ENCODER_CCW_CW(MS_WHLL, MS_WHLR) },
     [2] =  { ENCODER_CCW_CW(KC_PGUP, KC_PGDN)  },
     [3] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU)  },
     [4] =  { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) }
