@@ -34,7 +34,7 @@ const uint16_t PROGMEM combo_esc[] = {KC_Q, KC_W, COMBO_END};
 const uint16_t PROGMEM combo_tab[] = {KC_W,   KC_E, COMBO_END};
 const uint16_t PROGMEM combo_bspc[] = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM combo_del[] = {KC_O, KC_P, COMBO_END};
-const uint16_t PROGMEM combo_ent[] = {RALT_T(KC_K), RCTL_T(KC_L), COMBO_END};
+const uint16_t PROGMEM combo_ent[] = {RGUI_T(KC_K), RALT_T(KC_L), COMBO_END};
 const uint16_t PROGMEM combo_caps[] = {KC_Q, KC_P, COMBO_END};
 const uint16_t PROGMEM combo_special[] = {LT(1,KC_BSPC), LT(3,KC_SPC), COMBO_END};
 
