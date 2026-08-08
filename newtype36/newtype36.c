@@ -150,11 +150,13 @@ bool process_record_kb(uint16_t keycode, keyrecord_t* record) {
 
     switch (keycode) {
 #ifndef MOUSEKEY_ENABLE
-        // process KC_MS_BTN1~8 by myself
+        // process MS_BTN1~8 by myself
         // See process_action() in quantum/action.c for details.
-        case KC_MS_BTN1 ... KC_MS_BTN8: {
+        // NOTE: renamed from KC_MS_BTN1..8 to MS_BTN1..8 per QMK's mouse
+        // keycode normalization (PR #23975).
+        case MS_BTN1 ... MS_BTN8: {
             extern void register_button(bool, enum mouse_buttons);
-            register_button(record->event.pressed, MOUSE_BTN_MASK(keycode - KC_MS_BTN1));
+            register_button(record->event.pressed, MOUSE_BTN_MASK(keycode - MS_BTN1));
             return false;
         }
 #endif
@@ -229,4 +231,3 @@ bool cocot_get_scroll_mode(void) {
 void cocot_set_scroll_mode(bool mode) {
     cocot_config.scrl_mode = mode;
 }
-
