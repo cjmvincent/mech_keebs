@@ -83,6 +83,14 @@ void pointing_device_init_kb(void) {
 
 report_mouse_t pointing_device_task_kb(report_mouse_t mouse_report) {
 
+#ifdef CONSOLE_ENABLE
+    // TEMP DEBUG: raw sensor values, pre-rotation/pre-invert. Move ball
+    // straight RIGHT and note the sign of x here. Remove once diagnosed.
+    if (mouse_report.x != 0 || mouse_report.y != 0) {
+        dprintf("raw x: %d, y: %d\n", mouse_report.x, mouse_report.y);
+    }
+#endif
+
     double rad = angle_array[cocot_config.rotation_angle] * (M_PI / 180) * -1;
     int8_t x_rev =  + mouse_report.x * cos(rad) - mouse_report.y * sin(rad);
     int8_t y_rev =  + mouse_report.x * sin(rad) + mouse_report.y * cos(rad);
@@ -126,7 +134,7 @@ report_mouse_t pointing_device_task_kb(report_mouse_t mouse_report) {
         mouse_report.x = 0;
         mouse_report.y = 0;
     } else {
-        mouse_report.x = x_rev;
+        mouse_report.x = -x_rev;
         mouse_report.y = y_rev;
     }
 
